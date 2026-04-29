@@ -1,0 +1,20 @@
+skill:
+  name: <skill-name>
+  version: <version-or-commit>
+  source_type: <local|git|bundle|marketplace>
+  source_identifier: <url-or-id>
+  imported_at: <timestamp>
+  imported_by: <agent-or-user>
+  approval_state: <quarantine|approved|rejected|disabled>
+  trust_level: <internal|curated|external>
+  evaluation:
+    scenario: <representative-task>
+    result: <pass|fail>
+    notes: <summary>
+
+identity_binding:
+  protocol: agent-id
+  did: did:<method>:<method-specific-id>
+  protocol_version: 0.1.0
+  bindings:
+    - <a2a|acp|anp>

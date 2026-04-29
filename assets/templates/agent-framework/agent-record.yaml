@@ -1,0 +1,25 @@
+agent_id_protocol_version: "0.1.0"
+agent:
+  did: did:<method>:<method-specific-id>
+  display_name: <human-readable-name>
+  owner: <team-or-system>
+  role: <primary-role>
+  environment: <lab|staging|prod>
+  version: <v1>
+  status: <active|disabled|quarantine>
+  trust_level: <internal|curated|external>
+  capabilities:
+    - <capability>
+bindings:
+  a2a:
+    enabled: true
+    agent_card_name: <agent-card-name>
+    endpoint_url: https://example.com/a2a
+  acp:
+    enabled: false
+    endpoint_url: null
+  anp:
+    enabled: false
+    did: null
+    endpoint_url: null
+extensions: {}

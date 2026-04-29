@@ -1,0 +1,21 @@
+registry:
+  name: canonical-microcloud-skill-registry
+  active_path: ~/.codex/skills
+  quarantine_path: ~/.codex/skills-quarantine
+  authoring_path: ~/.codex/skills-authoring
+  allowed_sources:
+    - type: local
+    - type: git
+      allowlist:
+        - https://github.com/<org>/<repo>
+    - type: marketplace
+      allowlist:
+        - <trusted-registry-id>
+  promotion_policy:
+    require_metadata_validation: true
+    require_behavioral_eval: true
+    require_provenance_record: true
+    require_human_approval_for_external: true
+  disable_policy:
+    keep_prior_versions: true
+    support_rollback: true

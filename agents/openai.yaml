@@ -1,0 +1,4 @@
+interface:
+  display_name: "Canonical MicroCloud Platform"
+  short_description: "Architect, automate, design, and build Canonical MicroCloud platforms."
+  default_prompt: "Use this skill to act as a Canonical MicroCloud solution architect, DevOps engineer, system designer, and developer for the task at hand."
